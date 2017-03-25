@@ -6,10 +6,11 @@ namespace XamarinFormsBehaviors
 {
     public class ItemSelectedToCommandBehavior : Behavior<ListView>
     {
-        public static readonly BindableProperty CommandProperty = BindableProperty.Create(
-            propertyName: "Command",
-            returnType: typeof(ICommand),
-            declaringType: typeof(ItemSelectedToCommandBehavior));
+        public static readonly BindableProperty CommandProperty = 
+            BindableProperty.Create(
+                propertyName: "Command",
+                returnType: typeof(ICommand),
+                declaringType: typeof(ItemSelectedToCommandBehavior));
 
         public ICommand Command
         {
